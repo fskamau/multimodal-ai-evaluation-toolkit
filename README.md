@@ -20,6 +20,37 @@ The project provides structured evaluation schemas, side-by-side response compar
 
 ---
 
+## Evaluation Workflow
+
+```mermaid
+flowchart LR
+    A[Evaluation Input] --> B{Task Type}
+
+    B --> C[Text]
+    B --> D[Image + Text]
+    B --> E[Tool Use]
+    B --> F[Pairwise]
+
+    C --> G[Evaluation Engine]
+    D --> G
+    E --> G
+    F --> G
+
+    G --> H[Rubric Scoring]
+    G --> I[Error Classification]
+    G --> J[Validation]
+
+    H --> K[Structured Results]
+    I --> K
+    J --> K
+
+    K --> L[JSON / CSV]
+    K --> M[Analytics]
+    K --> N[Reports]
+```
+
+---
+
 ## Overview
 
 Modern AI systems need more than fluent outputs. They need to follow instructions, remain grounded in available evidence, interpret visual information correctly, use tools appropriately, and avoid unsupported claims.
@@ -223,36 +254,6 @@ The structured format makes evaluation results suitable for later processing wit
 }
 ```
 
----
-
-## Evaluation Workflow
-
-```mermaid
-flowchart LR
-    A[Evaluation Input] --> B{Task Type}
-
-    B --> C[Text]
-    B --> D[Image + Text]
-    B --> E[Tool Use]
-    B --> F[Pairwise]
-
-    C --> G[Evaluation Engine]
-    D --> G
-    E --> G
-    F --> G
-
-    G --> H[Rubric Scoring]
-    G --> I[Error Classification]
-    G --> J[Validation]
-
-    H --> K[Structured Results]
-    I --> K
-    J --> K
-
-    K --> L[JSON / CSV]
-    K --> M[Analytics]
-    K --> N[Reports]
-```
 
 ---
 
