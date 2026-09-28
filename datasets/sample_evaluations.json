@@ -1,0 +1,17 @@
+[
+  {
+    "evaluation_id": "eval_0001",
+    "task_type": "multimodal",
+    "prompt": "Describe the important objects visible in the image.",
+    "response": "The image contains a vehicle near a pedestrian crossing.",
+    "scores": {
+      "factuality": 4,
+      "instruction_following": 5,
+      "completeness": 4,
+      "relevance": 5,
+      "visual_grounding": 4
+    },
+    "errors": [],
+    "verdict": "PASS"
+  }
+]

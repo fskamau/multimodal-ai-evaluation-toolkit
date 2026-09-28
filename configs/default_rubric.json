@@ -1,0 +1,15 @@
+{
+  "scale": {
+    "minimum": 1,
+    "maximum": 5
+  },
+  "dimensions": {
+    "factuality": "Accuracy of factual claims.",
+    "instruction_following": "Compliance with explicit task requirements.",
+    "completeness": "Coverage of important requested information.",
+    "relevance": "Focus on the requested task.",
+    "grounding": "Support from provided context or evidence.",
+    "visual_grounding": "Accuracy of claims derived from visual evidence.",
+    "tool_use": "Appropriateness and correctness of tool use."
+  }
+}
